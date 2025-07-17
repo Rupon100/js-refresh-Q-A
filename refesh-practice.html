@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresh JS practice</title>
+    <link rel="stylesheet" href="./ref-style.css">
+</head>
+<body>
+    <!-- <h3 style="text-align: center; border-bottom: 1px solid black; padding: 10px;">JS Refresh Practice</h3>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 1rem;">
+        <div style="display: flex; row-gap: 10px; column-gap: 1rem;">
+            <button id="incre" onclick="increment()">incre...</button>
+            <div id="number">0</div>
+            <button id="decre" onclick="decrement()">decre...</button>
+        </div>
+        <button onclick="promptFunc()" >Click to prompt</button>
+        <button onclick="openFunc()" >Click to open</button>
+        <button onclick="closeFunc()" >Click to close</button>
+
+
+
+    </div> -->
+
+    <!--DOM in JS-->
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin: 20px; padding: 10px;">
+        <div>
+            <h1 id="title">Document Object Model</h1>
+            <p>Hello there</p>
+        </div>
+        <div id="box_id">
+            box id
+        </div>
+        <div class="box_class">
+            box class
+        </div>
+        <!-- <div>
+            <ul>
+                <li id="home"><a href="#">Home</a></li>
+                <li id="about"><a href="#">About</a></li>
+                <li id="contact"><a href="#">Contact</a></li>
+            </ul>
+        </div> -->
+        
+    </div>
+
+    <div class="box-parent">
+            <div class="box">box1</div>
+            <div class="box">box2</div>
+            <div class="box">box3</div>
+    </div>
+    <div class="hero">
+        <h2>Second Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <ul class="list">
+        <li>list 1</li>
+        <li>list 2</li>
+    </ul>
+
+    <script src="./refesh-practice.js"></script>
+    <script src="./js_pblm_solving.js" ></script>
+    <script>
+        const promptFunc = () => {
+            const result = prompt("What is your name: ");
+            document.write("Congratualations, ", result);
+        }
+        const openFunc = () => {
+            open();
+        }
+        const closeFunc = () => {
+            close();
+        }
+
+        // setTimeout(() => {
+        //     alert("After 2s alert!");
+        // }, 5000);
+
+        // setInterval(() => {
+        //     console.log("Hello")
+        // }, 1000)
+
+        // // navigator for access users location
+        // let appCodeName = navigator.appCodeName;
+        // let appName = navigator.appName;
+        // let appVersion = navigator.appVersion;
+        // let cookie = navigator.cookieEnabled;
+        // let language = navigator.language;
+        // let agent = navigator.userAgent;
+        // let platform = navigator.platform;
+        // document.write(appCodeName + "<br>");
+        // document.write(appName + "<br>");
+        // document.write(appVersion + "<br>");
+        // document.write(cookie + "<br>");
+        // document.write(language + "<br>");
+        // document.write(agent + "<br>");
+        // document.write(platform + "<br>");
+
+        // // for getting users geo-location
+        // navigator.geolocation.getCurrentPosition((position) => {
+        //     let altitude = position.coords.altitude;
+        //     let latitude = position.coords.latitude;
+        //     let longitude = position.coords.longitude;
+        //     let speed = position.coords.speed;
+
+        //     console.log(altitude, latitude, longitude, speed);
+        // })
+
+    </script>
+</body>
+</html>
